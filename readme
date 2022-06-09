@@ -1,0 +1,17 @@
+
+This check point 
+
+-Exprss api server that managed something (todos, users, recipes, cars, students)
+- Requirements:
+    We want an api endpoint (route) that can
+    - add an item in the db, given the Id
+    - update an item in the db, given the Id
+    - list a summary of all items in the db
+    - get details about a single item, given the Id
+    - delete an item in the db, given the Id
+
+you must use more than one file, ie, organze your code, using router file and controllr file
+you must use the static functionality to serve up an html file that acts as the docmentatiohn for your api
+your code/functions should have good code comments/ documentation
+your application must connect to a database (mySQL)
+you must use dotenv module to store sensitive information (db password , user name, url )
