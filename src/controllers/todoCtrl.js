@@ -66,6 +66,7 @@ let updateItem = function(req, res){
      res.sendStatus(204);
  }
 
+ // exporting itemDetails, itemsSummary, createItem, updateItem, deleteItems
  module.exports = {
      itemDetails, itemSummary, createItem, updateItem, deleteItem
  }

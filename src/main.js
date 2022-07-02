@@ -1,9 +1,13 @@
+// we're bringing in express, body parser, dotenv
+
 const express = require("express");
 const bodyParser = require("body-parser");
 let dotenv = require("dotenv");
 dotenv.config();
 
 // get the app servers port from env, fallback on port 8000 if not configured
+// the process object has all the global variables in it. Meaning we don't have to 
+// hard code in the db.js and use process
 const PORT = process.env.PORT;
 
 let app = express();
@@ -21,4 +25,3 @@ app.listen(PORT, function(){
     console.log("Api Server started on port", PORT);
 });
 
-// "select = from items"

@@ -1,3 +1,7 @@
+// bringing in express
+// also "../controllers/todoCtrl");
+// made a variable for router
+
 const express = require("express");
 let router = new express.Router()
 let controller = require("../controllers/todoCtrl");
@@ -17,5 +21,5 @@ router.get("todos/:id", controller.updateItem);
 // delete an item, given its id
 router.get("/todos/:id", controller.deleteItem);
 
-
+// we're exporting the router
 module.exports = router;
