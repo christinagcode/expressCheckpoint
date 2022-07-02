@@ -1,3 +1,6 @@
+-- we're recording the structure of our sql model
+
+-- we create a todo table
 CREATE TABLE todos (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     TASK VARCHAR(50) NOT NULL,
